@@ -1,0 +1,49 @@
+    
+actions: 
+  - utter_greet
+  - utter_courses
+  - action_courses
+  - utter_my_name_is
+  - utter_default
+  - utter_thank
+  - utter_bye
+  - utter_ask_register_online
+ 
+intents: 
+  - greet
+  - courses
+  - my_name_is
+  - thank
+  - bye
+  - ask_register_online
+
+
+
+slots:   
+  REG:
+    type: text
+  person:
+    type: text  
+    
+templates:
+  utter_greet:
+    - "Hello, What is your name?"
+    - "Hi, your name please!"
+  utter_my_name_is:
+    - "Nice to meet you {person} "
+    - "Nice name {person} "     
+
+  utter_courses:
+    - "We provide all Mobile App development, web development and data science courses"
+    - "We provide all IT courses."   
+  utter_default:
+    - "I didn't understand"  
+  utter_thank:
+    - "welcome"    
+  utter_bye:
+    - "It was nice talking to you"
+    - "Bye"    
+  utter_ask_register_online: 
+    - 
+      text: "You can {REG} by paying Rs 5000. You can pay using Payment wallets, Net Banking. Also you need to send your details:- Name, Ph No, Email ID, Technology in which you want to enroll, father's name and address. You can message these details to 9779444127."       
+      
