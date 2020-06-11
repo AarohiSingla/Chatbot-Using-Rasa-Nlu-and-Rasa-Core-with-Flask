@@ -9,7 +9,7 @@ python -m rasa_core.train -d domain.yml -s data/stories.md -o models/dialogue -c
 
 
 3- Run Bot server by
-python -m rasa_core.run --enable_api -d models/dialogue -u models/nlu/default/current --cors "*" -o out.log --endpoints endpoints.yml --port 5500 --credentials credentials.yml
+python -m rasa_core.run --enable_api -d models/dialogue -u models/nlu/default/current --cors "*" -o out.log --endpoints endpoints.yml --port 5800 --credentials credentials.yml
 
 
 4- Run web app by 
